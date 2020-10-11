@@ -4,6 +4,10 @@ import router from './router'
 import store from './store'
 import './assets/style/global.scss'
 
+import { Button, Message } from 'element-ui'
+Vue.component(Button.name, Button)
+Vue.prototype.$message = Message
+
 Vue.config.productionTip = false
 
 new Vue({

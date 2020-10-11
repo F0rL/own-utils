@@ -1,5 +1,7 @@
 <template>
-  <div class="home">Home</div>
+  <div class="home">
+    <el-button @click="handleMessage">点击message</el-button>
+  </div>
 </template>
 
 <script>
@@ -7,6 +9,18 @@
 
 export default {
   name: 'Home',
-  components: {},
+  methods: {
+    handleMessage() {
+      this.$message('弹窗')
+    },
+  },
 }
 </script>
+<style lang="scss" scoped>
+.home {
+  width: 20px;
+  ::v-deep .el-button {
+    color: red;
+  }
+}
+</style>
