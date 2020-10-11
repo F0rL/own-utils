@@ -1,26 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Form from '../views/Form.vue'
-import AddRule from '../views/AddRule.vue'
-import HandleValidator from '../views/HandleValidator.vue'
+import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Form',
-    component: Form
-  },
-  {
-    path: '/addRule',
-    name: 'Form',
-    component: AddRule
-  },
-  {
-    path: '/handle',
-    name: 'HandleValidator',
-    component: HandleValidator
+    name: 'Home',
+    component: Home
   }
 ]
 

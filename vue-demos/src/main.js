@@ -4,21 +4,8 @@ import router from './router'
 import store from './store'
 import './assets/style/global.scss'
 
-import {
-  Button,
-  Message,
-  Form,
-  FormItem,
-  Input,
-  Select,
-  Option
-} from 'element-ui'
-Vue.use(Button)
-Vue.use(Form)
-Vue.use(FormItem)
-Vue.use(Input)
-Vue.use(Select)
-Vue.use(Option)
+import { Button, Message } from 'element-ui'
+Vue.component(Button.name, Button)
 Vue.prototype.$message = Message
 
 Vue.config.productionTip = false
